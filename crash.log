@@ -1,0 +1,809 @@
+2020/06/17 14:20:55 [INFO] Terraform version: 0.12.26  
+2020/06/17 14:20:55 [INFO] Go runtime version: go1.12.13
+2020/06/17 14:20:55 [INFO] CLI args: []string{"/usr/local/bin/terraform", "apply"}
+2020/06/17 14:20:55 [DEBUG] Attempting to open CLI config file: /home/dish01/.terraformrc
+2020/06/17 14:20:55 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/06/17 14:20:55 [DEBUG] checking for credentials in "/home/dish01/.terraform.d/plugins"
+2020/06/17 14:20:55 [DEBUG] checking for credentials in "/home/dish01/.terraform.d/plugins/linux_amd64"
+2020/06/17 14:20:55 [INFO] CLI command args: []string{"apply"}
+2020/06/17 14:20:55 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2020/06/17 14:20:55 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2020/06/17 14:20:55 [DEBUG] New state was assigned lineage "cda0b893-039c-1b25-1b8c-206c8ea62c6b"
+2020/06/17 14:20:55 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2020/06/17 14:20:55 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2020/06/17 14:20:55 [DEBUG] checking for provider in "."
+2020/06/17 14:20:55 [DEBUG] checking for provider in "/usr/local/bin"
+2020/06/17 14:20:55 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2020/06/17 14:20:55 [DEBUG] checking for provider in "/home/dish01/.terraform.d/plugins"
+2020/06/17 14:20:55 [DEBUG] checking for provider in "/home/dish01/.terraform.d/plugins/linux_amd64"
+2020/06/17 14:20:55 [WARN] found legacy provider "terraform-provider-libvirt"
+2020/06/17 14:20:55 [WARN] found legacy provider "terraform-provider-ovirt"
+2020/06/17 14:20:55 [WARN] found legacy provider "terraform-provider-phpipam"
+2020/06/17 14:20:55 [WARN] found legacy provider "terraform-provider-restapi"
+2020/06/17 14:20:55 [DEBUG] found valid plugin: "restapi", "0.0.0", "/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-restapi"
+2020/06/17 14:20:55 [DEBUG] found valid plugin: "libvirt", "0.0.0", "/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-libvirt"
+2020/06/17 14:20:55 [DEBUG] found valid plugin: "ovirt", "0.0.0", "/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-ovirt"
+2020/06/17 14:20:55 [DEBUG] found valid plugin: "phpipam", "0.0.0", "/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam"
+2020/06/17 14:20:55 [DEBUG] checking for provisioner in "."
+2020/06/17 14:20:55 [DEBUG] checking for provisioner in "/usr/local/bin"
+2020/06/17 14:20:55 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2020/06/17 14:20:55 [DEBUG] checking for provisioner in "/home/dish01/.terraform.d/plugins"
+2020/06/17 14:20:55 [DEBUG] checking for provisioner in "/home/dish01/.terraform.d/plugins/linux_amd64"
+2020/06/17 14:20:55 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2020/06/17 14:20:55 [INFO] backend/local: starting Apply operation
+2020/06/17 14:20:55 [TRACE] backend/local: requesting state manager for workspace "default"
+2020/06/17 14:20:55 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2020/06/17 14:20:55 [TRACE] backend/local: requesting state lock for workspace "default"
+2020/06/17 14:20:55 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2020/06/17 14:20:55 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2020/06/17 14:20:55 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2020/06/17 14:20:55 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2020/06/17 14:20:55 [TRACE] backend/local: reading remote state for workspace "default"
+2020/06/17 14:20:55 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2020/06/17 14:20:55 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2020/06/17 14:20:55 [TRACE] statemgr.Filesystem: read nil snapshot
+2020/06/17 14:20:55 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2020/06/17 14:20:55 [TRACE] backend/local: building context for current working directory
+2020/06/17 14:20:55 [TRACE] terraform.NewContext: starting
+2020/06/17 14:20:55 [TRACE] terraform.NewContext: resolving provider version selections
+2020/06/17 14:20:55 [TRACE] terraform.NewContext: loading provider schemas
+2020/06/17 14:20:55 [TRACE] LoadSchemas: retrieving schema for provider type "phpipam"
+2020-06-17T14:20:55.790+0200 [INFO]  plugin: configuring client automatic mTLS
+2020-06-17T14:20:55.823+0200 [DEBUG] plugin: starting plugin: path=/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam args=[/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam]
+2020-06-17T14:20:55.824+0200 [DEBUG] plugin: plugin started: path=/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam pid=436716
+2020-06-17T14:20:55.824+0200 [DEBUG] plugin: waiting for RPC address: path=/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam
+2020-06-17T14:20:55.837+0200 [INFO]  plugin.terraform-provider-phpipam: configuring server automatic mTLS: timestamp=2020-06-17T14:20:55.837+0200
+2020-06-17T14:20:55.871+0200 [DEBUG] plugin.terraform-provider-phpipam: plugin address: address=/tmp/plugin066199314 network=unix timestamp=2020-06-17T14:20:55.871+0200
+2020-06-17T14:20:55.871+0200 [DEBUG] plugin: using plugin: version=5
+2020/06/17 14:20:55 [TRACE] GRPCProvider: GetSchema
+2020-06-17T14:20:55.941+0200 [TRACE] plugin.stdio: waiting for stdio data
+2020-06-17T14:20:55.941+0200 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2020/06/17 14:20:55 [TRACE] GRPCProvider: Close
+2020-06-17T14:20:55.945+0200 [DEBUG] plugin: plugin process exited: path=/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam pid=436716
+2020-06-17T14:20:55.945+0200 [DEBUG] plugin: plugin exited
+2020/06/17 14:20:55 [TRACE] terraform.NewContext: complete
+2020/06/17 14:20:55 [TRACE] backend/local: finished building terraform.Context
+2020/06/17 14:20:55 [TRACE] backend/local: requesting interactive input, if necessary
+2020/06/17 14:20:55 [TRACE] Context.Input: Prompting for provider arguments
+2020/06/17 14:20:55 [TRACE] Context.Input: Provider provider.phpipam declared at main.tf:1,1-19
+2020/06/17 14:20:55 [TRACE] Context.Input: Input for provider.phpipam: map[string]cty.Value{}
+2020/06/17 14:20:55 [TRACE] backend/local: running validation operation
+2020/06/17 14:20:55 [INFO] terraform: building graph: GraphTypeValidate
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/06/17 14:20:55 [TRACE] ConfigTransformer: Starting for path: 
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+  ------
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+  output.search_result - *terraform.NodeApplyableOutput
+  ------
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/06/17 14:20:55 [TRACE] StateTransformer: state is empty, so nothing to do
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/06/17 14:20:55 [TRACE] AttachResourceConfigTransformer: attaching to "data.phpipam_addresses.address_search" (*terraform.NodeValidatableResource) config from hcl.Range{Filename:"main.tf", Start:hcl.Pos{Line:8, Column:1, Byte:158}, End:hcl.Pos{Line:8, Column:42, Byte:199}}
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+  output.search_result - *terraform.NodeApplyableOutput
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/06/17 14:20:55 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/06/17 14:20:55 [TRACE] ProviderConfigTransformer: attaching to "provider.phpipam" provider configuration from main.tf:1,1-19
+2020/06/17 14:20:55 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+  output.search_result - *terraform.NodeApplyableOutput
+  provider.phpipam - *terraform.NodeApplyableProvider
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:55 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/06/17 14:20:55 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/06/17 14:20:55 [TRACE] ProviderTransformer: data.phpipam_addresses.address_search is provided by provider.phpipam or inherited equivalent
+2020/06/17 14:20:55 [TRACE] ProviderTransformer: exact match for provider.phpipam serving data.phpipam_addresses.address_search
+2020/06/17 14:20:55 [DEBUG] ProviderTransformer: "data.phpipam_addresses.address_search" (*terraform.NodeValidatableResource) needs provider.phpipam
+2020/06/17 14:20:55 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  output.search_result - *terraform.NodeApplyableOutput
+  provider.phpipam - *terraform.NodeApplyableProvider
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:55 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/06/17 14:20:55 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/06/17 14:20:55 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  output.search_result - *terraform.NodeApplyableOutput
+  provider.phpipam - *terraform.NodeApplyableProvider
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/06/17 14:20:55 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.phpipam
+2020/06/17 14:20:55 [TRACE] AttachSchemaTransformer: attaching resource schema to data.phpipam_addresses.address_search
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/06/17 14:20:55 [DEBUG] ReferenceTransformer: "output.search_result" references: [data.phpipam_addresses.address_search]
+2020/06/17 14:20:55 [DEBUG] ReferenceTransformer: "var.subnet_address" references: []
+2020/06/17 14:20:55 [DEBUG] ReferenceTransformer: "var.phpipam_endpoint" references: []
+2020/06/17 14:20:55 [DEBUG] ReferenceTransformer: "var.phpipam_app_id" references: []
+2020/06/17 14:20:55 [DEBUG] ReferenceTransformer: "var.phpipam_username" references: []
+2020/06/17 14:20:55 [DEBUG] ReferenceTransformer: "var.phpipam_password" references: []
+2020/06/17 14:20:55 [DEBUG] ReferenceTransformer: "provider.phpipam" references: [var.phpipam_password var.phpipam_username var.phpipam_app_id var.phpipam_endpoint]
+2020/06/17 14:20:55 [DEBUG] ReferenceTransformer: "data.phpipam_addresses.address_search" references: []
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  output.search_result - *terraform.NodeApplyableOutput
+    data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+  provider.phpipam - *terraform.NodeApplyableProvider
+    var.phpipam_app_id - *terraform.NodeRootVariable
+    var.phpipam_endpoint - *terraform.NodeRootVariable
+    var.phpipam_password - *terraform.NodeRootVariable
+    var.phpipam_username - *terraform.NodeRootVariable
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+    output.search_result - *terraform.NodeApplyableOutput
+    provider.phpipam - *terraform.NodeApplyableProvider
+    var.phpipam_app_id - *terraform.NodeRootVariable
+    var.phpipam_endpoint - *terraform.NodeRootVariable
+    var.phpipam_password - *terraform.NodeRootVariable
+    var.phpipam_username - *terraform.NodeRootVariable
+    var.subnet_address - *terraform.NodeRootVariable
+  output.search_result - *terraform.NodeApplyableOutput
+    data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+  provider.phpipam - *terraform.NodeApplyableProvider
+    var.phpipam_app_id - *terraform.NodeRootVariable
+    var.phpipam_endpoint - *terraform.NodeRootVariable
+    var.phpipam_password - *terraform.NodeRootVariable
+    var.phpipam_username - *terraform.NodeRootVariable
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+    output.search_result - *terraform.NodeApplyableOutput
+    provider.phpipam - *terraform.NodeApplyableProvider
+    var.phpipam_app_id - *terraform.NodeRootVariable
+    var.phpipam_endpoint - *terraform.NodeRootVariable
+    var.phpipam_password - *terraform.NodeRootVariable
+    var.phpipam_username - *terraform.NodeRootVariable
+    var.subnet_address - *terraform.NodeRootVariable
+  output.search_result - *terraform.NodeApplyableOutput
+    data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+  provider.phpipam - *terraform.NodeApplyableProvider
+    var.phpipam_app_id - *terraform.NodeRootVariable
+    var.phpipam_endpoint - *terraform.NodeRootVariable
+    var.phpipam_password - *terraform.NodeRootVariable
+    var.phpipam_username - *terraform.NodeRootVariable
+  provider.phpipam (close) - *terraform.graphNodeCloseProvider
+    data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer (no changes)
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+    output.search_result - *terraform.NodeApplyableOutput
+    provider.phpipam - *terraform.NodeApplyableProvider
+    var.phpipam_app_id - *terraform.NodeRootVariable
+    var.phpipam_endpoint - *terraform.NodeRootVariable
+    var.phpipam_password - *terraform.NodeRootVariable
+    var.phpipam_username - *terraform.NodeRootVariable
+    var.subnet_address - *terraform.NodeRootVariable
+  output.search_result - *terraform.NodeApplyableOutput
+    data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+  provider.phpipam - *terraform.NodeApplyableProvider
+    var.phpipam_app_id - *terraform.NodeRootVariable
+    var.phpipam_endpoint - *terraform.NodeRootVariable
+    var.phpipam_password - *terraform.NodeRootVariable
+    var.phpipam_username - *terraform.NodeRootVariable
+  provider.phpipam (close) - *terraform.graphNodeCloseProvider
+    data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.phpipam (close) - *terraform.graphNodeCloseProvider
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:55 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/06/17 14:20:55 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    output.search_result - *terraform.NodeApplyableOutput
+    var.subnet_address - *terraform.NodeRootVariable
+  output.search_result - *terraform.NodeApplyableOutput
+    data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+  provider.phpipam - *terraform.NodeApplyableProvider
+    var.phpipam_app_id - *terraform.NodeRootVariable
+    var.phpipam_endpoint - *terraform.NodeRootVariable
+    var.phpipam_password - *terraform.NodeRootVariable
+    var.phpipam_username - *terraform.NodeRootVariable
+  provider.phpipam (close) - *terraform.graphNodeCloseProvider
+    data.phpipam_addresses.address_search - *terraform.NodeValidatableResource
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.phpipam (close) - *terraform.graphNodeCloseProvider
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:55 [DEBUG] Starting graph walk: walkValidate
+2020/06/17 14:20:55 [TRACE] dag/walk: updating graph
+2020/06/17 14:20:55 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2020/06/17 14:20:55 [TRACE] dag/walk: added new vertex: "root"
+2020/06/17 14:20:55 [TRACE] dag/walk: added new vertex: "data.phpipam_addresses.address_search"
+2020/06/17 14:20:55 [TRACE] dag/walk: added new vertex: "output.search_result"
+2020/06/17 14:20:55 [TRACE] dag/walk: added new vertex: "var.phpipam_endpoint"
+2020/06/17 14:20:55 [TRACE] dag/walk: added new vertex: "provider.phpipam (close)"
+2020/06/17 14:20:55 [TRACE] dag/walk: added new vertex: "var.phpipam_password"
+2020/06/17 14:20:55 [TRACE] dag/walk: added new vertex: "provider.phpipam"
+2020/06/17 14:20:55 [TRACE] dag/walk: added new vertex: "var.subnet_address"
+2020/06/17 14:20:55 [TRACE] dag/walk: added new vertex: "var.phpipam_app_id"
+2020/06/17 14:20:55 [TRACE] dag/walk: added new vertex: "var.phpipam_username"
+2020/06/17 14:20:55 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "output.search_result"
+2020/06/17 14:20:55 [TRACE] dag/walk: added edge: "root" waiting on "provider.phpipam (close)"
+2020/06/17 14:20:55 [TRACE] dag/walk: added edge: "provider.phpipam (close)" waiting on "data.phpipam_addresses.address_search"
+2020/06/17 14:20:55 [TRACE] dag/walk: added edge: "provider.phpipam" waiting on "var.phpipam_app_id"
+2020/06/17 14:20:55 [TRACE] dag/walk: added edge: "provider.phpipam" waiting on "var.phpipam_password"
+2020/06/17 14:20:55 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "var.subnet_address"
+2020/06/17 14:20:55 [TRACE] dag/walk: added edge: "output.search_result" waiting on "data.phpipam_addresses.address_search"
+2020/06/17 14:20:55 [TRACE] dag/walk: added edge: "provider.phpipam" waiting on "var.phpipam_username"
+2020/06/17 14:20:55 [TRACE] dag/walk: added edge: "provider.phpipam" waiting on "var.phpipam_endpoint"
+2020/06/17 14:20:55 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2020/06/17 14:20:55 [TRACE] dag/walk: added edge: "data.phpipam_addresses.address_search" waiting on "provider.phpipam"
+2020/06/17 14:20:55 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2020/06/17 14:20:55 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2020/06/17 14:20:55 [TRACE] dag/walk: dependencies changed for "provider.phpipam (close)", sending new deps
+2020/06/17 14:20:55 [TRACE] dag/walk: dependencies changed for "provider.phpipam", sending new deps
+2020/06/17 14:20:55 [TRACE] dag/walk: dependencies changed for "output.search_result", sending new deps
+2020/06/17 14:20:55 [TRACE] dag/walk: dependencies changed for "data.phpipam_addresses.address_search", sending new deps
+2020/06/17 14:20:55 [TRACE] dag/walk: visiting "var.phpipam_endpoint"
+2020/06/17 14:20:55 [TRACE] vertex "var.phpipam_endpoint": starting visit (*terraform.NodeRootVariable)
+2020/06/17 14:20:55 [TRACE] vertex "var.phpipam_endpoint": evaluating
+2020/06/17 14:20:55 [TRACE] [walkValidate] Entering eval tree: var.phpipam_endpoint
+2020/06/17 14:20:55 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:55 [TRACE] [walkValidate] Exiting eval tree: var.phpipam_endpoint
+2020/06/17 14:20:55 [TRACE] vertex "var.phpipam_endpoint": visit complete
+2020/06/17 14:20:55 [TRACE] dag/walk: visiting "var.phpipam_app_id"
+2020/06/17 14:20:55 [TRACE] vertex "var.phpipam_app_id": starting visit (*terraform.NodeRootVariable)
+2020/06/17 14:20:55 [TRACE] vertex "var.phpipam_app_id": evaluating
+2020/06/17 14:20:55 [TRACE] [walkValidate] Entering eval tree: var.phpipam_app_id
+2020/06/17 14:20:55 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:55 [TRACE] [walkValidate] Exiting eval tree: var.phpipam_app_id
+2020/06/17 14:20:55 [TRACE] vertex "var.phpipam_app_id": visit complete
+2020/06/17 14:20:55 [TRACE] dag/walk: visiting "var.subnet_address"
+2020/06/17 14:20:55 [TRACE] vertex "var.subnet_address": starting visit (*terraform.NodeRootVariable)
+2020/06/17 14:20:55 [TRACE] vertex "var.subnet_address": evaluating
+2020/06/17 14:20:55 [TRACE] [walkValidate] Entering eval tree: var.subnet_address
+2020/06/17 14:20:55 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:55 [TRACE] [walkValidate] Exiting eval tree: var.subnet_address
+2020/06/17 14:20:55 [TRACE] vertex "var.subnet_address": visit complete
+2020/06/17 14:20:55 [TRACE] dag/walk: visiting "var.phpipam_username"
+2020/06/17 14:20:55 [TRACE] vertex "var.phpipam_username": starting visit (*terraform.NodeRootVariable)
+2020/06/17 14:20:55 [TRACE] vertex "var.phpipam_username": evaluating
+2020/06/17 14:20:55 [TRACE] [walkValidate] Entering eval tree: var.phpipam_username
+2020/06/17 14:20:55 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:55 [TRACE] [walkValidate] Exiting eval tree: var.phpipam_username
+2020/06/17 14:20:55 [TRACE] vertex "var.phpipam_username": visit complete
+2020/06/17 14:20:55 [TRACE] dag/walk: visiting "var.phpipam_password"
+2020/06/17 14:20:55 [TRACE] vertex "var.phpipam_password": starting visit (*terraform.NodeRootVariable)
+2020/06/17 14:20:55 [TRACE] vertex "var.phpipam_password": evaluating
+2020/06/17 14:20:55 [TRACE] [walkValidate] Entering eval tree: var.phpipam_password
+2020/06/17 14:20:55 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:55 [TRACE] [walkValidate] Exiting eval tree: var.phpipam_password
+2020/06/17 14:20:55 [TRACE] vertex "var.phpipam_password": visit complete
+2020/06/17 14:20:55 [TRACE] dag/walk: visiting "provider.phpipam"
+2020/06/17 14:20:55 [TRACE] vertex "provider.phpipam": starting visit (*terraform.NodeApplyableProvider)
+2020/06/17 14:20:55 [TRACE] vertex "provider.phpipam": evaluating
+2020/06/17 14:20:55 [TRACE] [walkValidate] Entering eval tree: provider.phpipam
+2020/06/17 14:20:55 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:55 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020-06-17T14:20:55.948+0200 [INFO]  plugin: configuring client automatic mTLS
+2020-06-17T14:20:55.979+0200 [DEBUG] plugin: starting plugin: path=/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam args=[/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam]
+2020-06-17T14:20:55.980+0200 [DEBUG] plugin: plugin started: path=/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam pid=436728
+2020-06-17T14:20:55.980+0200 [DEBUG] plugin: waiting for RPC address: path=/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam
+2020-06-17T14:20:55.990+0200 [INFO]  plugin.terraform-provider-phpipam: configuring server automatic mTLS: timestamp=2020-06-17T14:20:55.990+0200
+2020-06-17T14:20:56.021+0200 [DEBUG] plugin.terraform-provider-phpipam: plugin address: address=/tmp/plugin404312764 network=unix timestamp=2020-06-17T14:20:56.021+0200
+2020-06-17T14:20:56.021+0200 [DEBUG] plugin: using plugin: version=5
+2020/06/17 14:20:56 [TRACE] BuiltinEvalContext: Initialized "phpipam" provider for provider.phpipam
+2020/06/17 14:20:56 [TRACE] <root>: eval: terraform.EvalNoop
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalValidateProvider
+2020/06/17 14:20:56 [TRACE] buildProviderConfig for provider.phpipam: using explicit config only
+2020/06/17 14:20:56 [TRACE] GRPCProvider: GetSchema
+2020-06-17T14:20:56.088+0200 [TRACE] plugin.stdio: waiting for stdio data
+2020-06-17T14:20:56.089+0200 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2020/06/17 14:20:56 [TRACE] GRPCProvider: PrepareProviderConfig
+2020/06/17 14:20:56 [TRACE] <root>: eval: terraform.EvalNoop
+2020/06/17 14:20:56 [TRACE] <root>: eval: terraform.EvalNoop
+2020/06/17 14:20:56 [TRACE] [walkValidate] Exiting eval tree: provider.phpipam
+2020/06/17 14:20:56 [TRACE] vertex "provider.phpipam": visit complete
+2020/06/17 14:20:56 [TRACE] dag/walk: visiting "data.phpipam_addresses.address_search"
+2020/06/17 14:20:56 [TRACE] vertex "data.phpipam_addresses.address_search": starting visit (*terraform.NodeValidatableResource)
+2020/06/17 14:20:56 [TRACE] vertex "data.phpipam_addresses.address_search": evaluating
+2020/06/17 14:20:56 [TRACE] [walkValidate] Entering eval tree: data.phpipam_addresses.address_search
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalValidateResource
+2020/06/17 14:20:56 [TRACE] GRPCProvider: ValidateDataSourceConfig
+2020/06/17 14:20:56 [TRACE] [walkValidate] Exiting eval tree: data.phpipam_addresses.address_search
+2020/06/17 14:20:56 [TRACE] vertex "data.phpipam_addresses.address_search": visit complete
+2020/06/17 14:20:56 [TRACE] dag/walk: visiting "provider.phpipam (close)"
+2020/06/17 14:20:56 [TRACE] vertex "provider.phpipam (close)": starting visit (*terraform.graphNodeCloseProvider)
+2020/06/17 14:20:56 [TRACE] vertex "provider.phpipam (close)": evaluating
+2020/06/17 14:20:56 [TRACE] dag/walk: visiting "output.search_result"
+2020/06/17 14:20:56 [TRACE] vertex "output.search_result": starting visit (*terraform.NodeApplyableOutput)
+2020/06/17 14:20:56 [TRACE] vertex "output.search_result": evaluating
+2020/06/17 14:20:56 [TRACE] [walkValidate] Entering eval tree: output.search_result
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:56 [TRACE] [walkValidate] Entering eval tree: provider.phpipam (close)
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalCloseProvider
+2020/06/17 14:20:56 [TRACE] GRPCProvider: Close
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalWriteOutput
+2020/06/17 14:20:56 [TRACE] EvalWriteOutput: Removing output.search_result from state (it is now null)
+2020/06/17 14:20:56 [TRACE] EvalWriteOutput: Saving Create change for output.search_result in changeset
+2020/06/17 14:20:56 [TRACE] [walkValidate] Exiting eval tree: output.search_result
+2020/06/17 14:20:56 [TRACE] vertex "output.search_result": visit complete
+2020/06/17 14:20:56 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
+2020/06/17 14:20:56 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2020/06/17 14:20:56 [TRACE] vertex "meta.count-boundary (EachMode fixup)": evaluating
+2020/06/17 14:20:56 [TRACE] [walkValidate] Entering eval tree: meta.count-boundary (EachMode fixup)
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
+2020/06/17 14:20:56 [TRACE] [walkValidate] Exiting eval tree: meta.count-boundary (EachMode fixup)
+2020/06/17 14:20:56 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2020-06-17T14:20:56.095+0200 [DEBUG] plugin: plugin process exited: path=/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam pid=436728
+2020-06-17T14:20:56.095+0200 [DEBUG] plugin: plugin exited
+2020/06/17 14:20:56 [TRACE] [walkValidate] Exiting eval tree: provider.phpipam (close)
+2020/06/17 14:20:56 [TRACE] vertex "provider.phpipam (close)": visit complete
+2020/06/17 14:20:56 [TRACE] dag/walk: visiting "root"
+2020/06/17 14:20:56 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2020/06/17 14:20:56 [TRACE] vertex "root": visit complete
+2020/06/17 14:20:56 [INFO] backend/local: apply calling Refresh
+2020/06/17 14:20:56 [INFO] terraform: building graph: GraphTypeRefresh
+2020/06/17 14:20:56 [TRACE] No managed resources in state during refresh; skipping managed resource transformer
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/06/17 14:20:56 [TRACE] ConfigTransformer: Starting for path: 
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+  ------
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/06/17 14:20:56 [TRACE] StateTransformer: state is empty, so nothing to do
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/06/17 14:20:56 [TRACE] AttachResourceConfigTransformer: attaching to "data.phpipam_addresses.address_search" (*terraform.NodeRefreshableDataResource) config from hcl.Range{Filename:"main.tf", Start:hcl.Pos{Line:8, Column:1, Byte:158}, End:hcl.Pos{Line:8, Column:42, Byte:199}}
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+  output.search_result - *terraform.NodeApplyableOutput
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/06/17 14:20:56 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/06/17 14:20:56 [TRACE] ProviderConfigTransformer: attaching to "provider.phpipam" provider configuration from main.tf:1,1-19
+2020/06/17 14:20:56 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+  output.search_result - *terraform.NodeApplyableOutput
+  provider.phpipam - *terraform.NodeApplyableProvider
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:56 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/06/17 14:20:56 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/06/17 14:20:56 [TRACE] ProviderTransformer: data.phpipam_addresses.address_search is provided by provider.phpipam or inherited equivalent
+2020/06/17 14:20:56 [TRACE] ProviderTransformer: exact match for provider.phpipam serving data.phpipam_addresses.address_search
+2020/06/17 14:20:56 [DEBUG] ProviderTransformer: "data.phpipam_addresses.address_search" (*terraform.NodeRefreshableDataResource) needs provider.phpipam
+2020/06/17 14:20:56 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  output.search_result - *terraform.NodeApplyableOutput
+  provider.phpipam - *terraform.NodeApplyableProvider
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:56 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/06/17 14:20:56 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/06/17 14:20:56 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  output.search_result - *terraform.NodeApplyableOutput
+  provider.phpipam - *terraform.NodeApplyableProvider
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/06/17 14:20:56 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.phpipam
+2020/06/17 14:20:56 [TRACE] AttachSchemaTransformer: attaching resource schema to data.phpipam_addresses.address_search
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/06/17 14:20:56 [DEBUG] ReferenceTransformer: "var.subnet_address" references: []
+2020/06/17 14:20:56 [DEBUG] ReferenceTransformer: "var.phpipam_endpoint" references: []
+2020/06/17 14:20:56 [DEBUG] ReferenceTransformer: "var.phpipam_app_id" references: []
+2020/06/17 14:20:56 [DEBUG] ReferenceTransformer: "var.phpipam_username" references: []
+2020/06/17 14:20:56 [DEBUG] ReferenceTransformer: "output.search_result" references: [data.phpipam_addresses.address_search]
+2020/06/17 14:20:56 [DEBUG] ReferenceTransformer: "provider.phpipam" references: [var.phpipam_username var.phpipam_app_id var.phpipam_endpoint var.phpipam_password]
+2020/06/17 14:20:56 [DEBUG] ReferenceTransformer: "data.phpipam_addresses.address_search" references: []
+2020/06/17 14:20:56 [DEBUG] ReferenceTransformer: "var.phpipam_password" references: []
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  output.search_result - *terraform.NodeApplyableOutput
+    data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+  provider.phpipam - *terraform.NodeApplyableProvider
+    var.phpipam_app_id - *terraform.NodeRootVariable
+    var.phpipam_endpoint - *terraform.NodeRootVariable
+    var.phpipam_password - *terraform.NodeRootVariable
+    var.phpipam_username - *terraform.NodeRootVariable
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  output.search_result - *terraform.NodeApplyableOutput
+    data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+  provider.phpipam - *terraform.NodeApplyableProvider
+    var.phpipam_app_id - *terraform.NodeRootVariable
+    var.phpipam_endpoint - *terraform.NodeRootVariable
+    var.phpipam_password - *terraform.NodeRootVariable
+    var.phpipam_username - *terraform.NodeRootVariable
+  provider.phpipam (close) - *terraform.graphNodeCloseProvider
+    data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  output.search_result - *terraform.NodeApplyableOutput
+    data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+  provider.phpipam - *terraform.NodeApplyableProvider
+    var.phpipam_app_id - *terraform.NodeRootVariable
+    var.phpipam_endpoint - *terraform.NodeRootVariable
+    var.phpipam_password - *terraform.NodeRootVariable
+    var.phpipam_username - *terraform.NodeRootVariable
+  provider.phpipam (close) - *terraform.graphNodeCloseProvider
+    data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  root - terraform.graphNodeRoot
+    output.search_result - *terraform.NodeApplyableOutput
+    provider.phpipam (close) - *terraform.graphNodeCloseProvider
+    var.subnet_address - *terraform.NodeRootVariable
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+    provider.phpipam - *terraform.NodeApplyableProvider
+  output.search_result - *terraform.NodeApplyableOutput
+    data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+  provider.phpipam - *terraform.NodeApplyableProvider
+    var.phpipam_app_id - *terraform.NodeRootVariable
+    var.phpipam_endpoint - *terraform.NodeRootVariable
+    var.phpipam_password - *terraform.NodeRootVariable
+    var.phpipam_username - *terraform.NodeRootVariable
+  provider.phpipam (close) - *terraform.graphNodeCloseProvider
+    data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResource
+  root - terraform.graphNodeRoot
+    output.search_result - *terraform.NodeApplyableOutput
+    provider.phpipam (close) - *terraform.graphNodeCloseProvider
+    var.subnet_address - *terraform.NodeRootVariable
+  var.phpipam_app_id - *terraform.NodeRootVariable
+  var.phpipam_endpoint - *terraform.NodeRootVariable
+  var.phpipam_password - *terraform.NodeRootVariable
+  var.phpipam_username - *terraform.NodeRootVariable
+  var.subnet_address - *terraform.NodeRootVariable
+  ------
+2020/06/17 14:20:56 [DEBUG] Starting graph walk: walkRefresh
+2020/06/17 14:20:56 [TRACE] dag/walk: updating graph
+2020/06/17 14:20:56 [TRACE] dag/walk: added new vertex: "provider.phpipam"
+2020/06/17 14:20:56 [TRACE] dag/walk: added new vertex: "var.phpipam_app_id"
+2020/06/17 14:20:56 [TRACE] dag/walk: added new vertex: "data.phpipam_addresses.address_search"
+2020/06/17 14:20:56 [TRACE] dag/walk: added new vertex: "var.phpipam_endpoint"
+2020/06/17 14:20:56 [TRACE] dag/walk: added new vertex: "var.phpipam_password"
+2020/06/17 14:20:56 [TRACE] dag/walk: added new vertex: "var.phpipam_username"
+2020/06/17 14:20:56 [TRACE] dag/walk: added new vertex: "output.search_result"
+2020/06/17 14:20:56 [TRACE] dag/walk: added new vertex: "provider.phpipam (close)"
+2020/06/17 14:20:56 [TRACE] dag/walk: added new vertex: "root"
+2020/06/17 14:20:56 [TRACE] dag/walk: added new vertex: "var.subnet_address"
+2020/06/17 14:20:56 [TRACE] dag/walk: added edge: "provider.phpipam" waiting on "var.phpipam_password"
+2020/06/17 14:20:56 [TRACE] dag/walk: added edge: "provider.phpipam" waiting on "var.phpipam_username"
+2020/06/17 14:20:56 [TRACE] dag/walk: added edge: "provider.phpipam" waiting on "var.phpipam_app_id"
+2020/06/17 14:20:56 [TRACE] dag/walk: added edge: "provider.phpipam" waiting on "var.phpipam_endpoint"
+2020/06/17 14:20:56 [TRACE] dag/walk: added edge: "root" waiting on "var.subnet_address"
+2020/06/17 14:20:56 [TRACE] dag/walk: added edge: "root" waiting on "output.search_result"
+2020/06/17 14:20:56 [TRACE] dag/walk: added edge: "data.phpipam_addresses.address_search" waiting on "provider.phpipam"
+2020/06/17 14:20:56 [TRACE] dag/walk: added edge: "root" waiting on "provider.phpipam (close)"
+2020/06/17 14:20:56 [TRACE] dag/walk: added edge: "output.search_result" waiting on "data.phpipam_addresses.address_search"
+2020/06/17 14:20:56 [TRACE] dag/walk: added edge: "provider.phpipam (close)" waiting on "data.phpipam_addresses.address_search"
+2020/06/17 14:20:56 [TRACE] dag/walk: dependencies changed for "provider.phpipam (close)", sending new deps
+2020/06/17 14:20:56 [TRACE] dag/walk: dependencies changed for "provider.phpipam", sending new deps
+2020/06/17 14:20:56 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2020/06/17 14:20:56 [TRACE] dag/walk: dependencies changed for "data.phpipam_addresses.address_search", sending new deps
+2020/06/17 14:20:56 [TRACE] dag/walk: dependencies changed for "output.search_result", sending new deps
+2020/06/17 14:20:56 [TRACE] dag/walk: visiting "var.phpipam_endpoint"
+2020/06/17 14:20:56 [TRACE] dag/walk: visiting "var.phpipam_password"
+2020/06/17 14:20:56 [TRACE] vertex "var.phpipam_password": starting visit (*terraform.NodeRootVariable)
+2020/06/17 14:20:56 [TRACE] dag/walk: visiting "var.phpipam_username"
+2020/06/17 14:20:56 [TRACE] vertex "var.phpipam_password": evaluating
+2020/06/17 14:20:56 [TRACE] [walkRefresh] Entering eval tree: var.phpipam_password
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:56 [TRACE] [walkRefresh] Exiting eval tree: var.phpipam_password
+2020/06/17 14:20:56 [TRACE] vertex "var.phpipam_password": visit complete
+2020/06/17 14:20:56 [TRACE] dag/walk: visiting "var.subnet_address"
+2020/06/17 14:20:56 [TRACE] dag/walk: visiting "var.phpipam_app_id"
+2020/06/17 14:20:56 [TRACE] vertex "var.phpipam_app_id": starting visit (*terraform.NodeRootVariable)
+2020/06/17 14:20:56 [TRACE] vertex "var.phpipam_app_id": evaluating
+2020/06/17 14:20:56 [TRACE] [walkRefresh] Entering eval tree: var.phpipam_app_id
+2020/06/17 14:20:56 [TRACE] vertex "var.phpipam_endpoint": starting visit (*terraform.NodeRootVariable)
+2020/06/17 14:20:56 [TRACE] vertex "var.phpipam_endpoint": evaluating
+2020/06/17 14:20:56 [TRACE] [walkRefresh] Entering eval tree: var.phpipam_endpoint
+2020/06/17 14:20:56 [TRACE] vertex "var.phpipam_username": starting visit (*terraform.NodeRootVariable)
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:56 [TRACE] vertex "var.phpipam_username": evaluating
+2020/06/17 14:20:56 [TRACE] [walkRefresh] Entering eval tree: var.phpipam_username
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:56 [TRACE] [walkRefresh] Exiting eval tree: var.phpipam_username
+2020/06/17 14:20:56 [TRACE] vertex "var.phpipam_username": visit complete
+2020/06/17 14:20:56 [TRACE] [walkRefresh] Exiting eval tree: var.phpipam_endpoint
+2020/06/17 14:20:56 [TRACE] vertex "var.phpipam_endpoint": visit complete
+2020/06/17 14:20:56 [TRACE] vertex "var.subnet_address": starting visit (*terraform.NodeRootVariable)
+2020/06/17 14:20:56 [TRACE] vertex "var.subnet_address": evaluating
+2020/06/17 14:20:56 [TRACE] [walkRefresh] Entering eval tree: var.subnet_address
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:56 [TRACE] [walkRefresh] Exiting eval tree: var.subnet_address
+2020/06/17 14:20:56 [TRACE] vertex "var.subnet_address": visit complete
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:56 [TRACE] [walkRefresh] Exiting eval tree: var.phpipam_app_id
+2020/06/17 14:20:56 [TRACE] vertex "var.phpipam_app_id": visit complete
+2020/06/17 14:20:56 [TRACE] dag/walk: visiting "provider.phpipam"
+2020/06/17 14:20:56 [TRACE] vertex "provider.phpipam": starting visit (*terraform.NodeApplyableProvider)
+2020/06/17 14:20:56 [TRACE] vertex "provider.phpipam": evaluating
+2020/06/17 14:20:56 [TRACE] [walkRefresh] Entering eval tree: provider.phpipam
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020-06-17T14:20:56.097+0200 [INFO]  plugin: configuring client automatic mTLS
+2020-06-17T14:20:56.128+0200 [DEBUG] plugin: starting plugin: path=/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam args=[/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam]
+2020-06-17T14:20:56.128+0200 [DEBUG] plugin: plugin started: path=/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam pid=436739
+2020-06-17T14:20:56.128+0200 [DEBUG] plugin: waiting for RPC address: path=/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam
+2020-06-17T14:20:56.138+0200 [INFO]  plugin.terraform-provider-phpipam: configuring server automatic mTLS: timestamp=2020-06-17T14:20:56.138+0200
+2020-06-17T14:20:56.170+0200 [DEBUG] plugin.terraform-provider-phpipam: plugin address: address=/tmp/plugin799404225 network=unix timestamp=2020-06-17T14:20:56.170+0200
+2020-06-17T14:20:56.170+0200 [DEBUG] plugin: using plugin: version=5
+2020/06/17 14:20:56 [TRACE] BuiltinEvalContext: Initialized "phpipam" provider for provider.phpipam
+2020/06/17 14:20:56 [TRACE] <root>: eval: terraform.EvalNoop
+2020/06/17 14:20:56 [TRACE] <root>: eval: terraform.EvalNoop
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalConfigProvider
+2020/06/17 14:20:56 [TRACE] buildProviderConfig for provider.phpipam: using explicit config only
+2020/06/17 14:20:56 [TRACE] GRPCProvider: GetSchema
+2020-06-17T14:20:56.234+0200 [TRACE] plugin.stdio: waiting for stdio data
+2020-06-17T14:20:56.235+0200 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2020/06/17 14:20:56 [TRACE] GRPCProvider: Configure
+2020-06-17T14:20:56.237+0200 [DEBUG] plugin.terraform-provider-phpipam: 2020/06/17 14:20:56 [DEBUG] Initializing PHPIPAM controllers
+2020-06-17T14:20:56.237+0200 [DEBUG] plugin.terraform-provider-phpipam: 2020/06/17 14:20:56 Request Body Debug ................... {}
+2020-06-17T14:20:56.237+0200 [DEBUG] plugin.terraform-provider-phpipam: 2020/06/17 14:20:56 Request URL Debug ...................Method: POST, UR: https://ipam.domain.se/api/infraapi/user/
+2020-06-17T14:20:56.335+0200 [DEBUG] plugin.terraform-provider-phpipam: 2020/06/17 14:20:56 Response Body Debug ................... {"code":200,"success":true,"data":{"token":"h4k7MDc9OBSUEi55joy8hU1w","expires":"2020-06-17 20:20:56"},"time":0.028}
+2020-06-17T14:20:56.335+0200 [DEBUG] plugin.terraform-provider-phpipam: 2020/06/17 14:20:56 Request Body Debug ................... {}
+2020-06-17T14:20:56.335+0200 [DEBUG] plugin.terraform-provider-phpipam: 2020/06/17 14:20:56 Request URL Debug ...................Method: GET, UR: https://ipam.domain.se/api/infraapi/sections/
+2020-06-17T14:20:56.369+0200 [DEBUG] plugin.terraform-provider-phpipam: 2020/06/17 14:20:56 Response Body Debug ................... {"code":200,"success":true,"data":[{"id":"6","name":"AFA IA","description":"AFA IA system","masterSection":"0","permissions":"{\"4\":\"3\",\"5\":\"1\"}","strictMode":"1","subnetOrdering":"default","order":null,"editDate":"2020-02-27 15:07:07","showVLAN":"1","showVRF":"1","showSupernetOnly":"1","DNS":null},{"id":"7","name":"AFA FOU","description":"Forskning och Utveckling","masterSection":"0","permissions":"{\"5\":\"3\"}","strictMode":"1","subnetOrdering":"default","order":null,"editDate":"2020-02-27 14:58:20","showVLAN":"1","showVRF":"1","showSupernetOnly":"1","DNS":null},{"id":"4","name":"AFA client","description":"AFA client networks","masterSection":"0","permissions":"{\"2\":\"3\",\"5\":\"1\"}","strictMode":"1","subnetOrdering":"default","order":null,"editDate":"2020-02-27 15:07:37","showVLAN":"1","showVRF":"1","showSupernetOnly":"1","DNS":null},{"id":"5","name":"AFA public","description":"AFA public IP addresses","masterSection":"0","permissions":"{\"2\":\"3\"}","strictMode":"1","subnetOrdering":"default","order":null,"editDate":"2017-10-04 10:39:59","showVLAN":"1","showVRF":"1","showSupernetOnly":"1","DNS":null},{"id":"3","name":"AFA server","description":"AFA server networks","masterSection":"0","permissions":"{\"2\":\"3\",\"5\":\"1\"}","strictMode":"1","subnetOrdering":"default","order":null,"editDate":"2020-02-27 15:07:21","showVLAN":"1","showVRF":"1","showSupernetOnly":"1","DNS":null}],"time":0.003}
+2020/06/17 14:20:56 [TRACE] [walkRefresh] Exiting eval tree: provider.phpipam
+2020/06/17 14:20:56 [TRACE] vertex "provider.phpipam": visit complete
+2020/06/17 14:20:56 [TRACE] dag/walk: visiting "data.phpipam_addresses.address_search"
+2020/06/17 14:20:56 [TRACE] vertex "data.phpipam_addresses.address_search": starting visit (*terraform.NodeRefreshableDataResource)
+2020/06/17 14:20:56 [TRACE] vertex "data.phpipam_addresses.address_search": expanding dynamic subgraph
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+  data.phpipam_addresses.address_search - *terraform.NodeRefreshableDataResourceInstance
+  ------
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.OrphanResourceCountTransformer
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.OrphanResourceCountTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/06/17 14:20:56 [DEBUG] Resource state not found for node "data.phpipam_addresses.address_search", instance data.phpipam_addresses.address_search
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/06/17 14:20:56 [DEBUG] ReferenceTransformer: "data.phpipam_addresses.address_search" references: []
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/06/17 14:20:56 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2020/06/17 14:20:56 [TRACE] vertex "data.phpipam_addresses.address_search": entering dynamic subgraph
+2020/06/17 14:20:56 [TRACE] dag/walk: updating graph
+2020/06/17 14:20:56 [TRACE] dag/walk: added new vertex: "data.phpipam_addresses.address_search"
+2020/06/17 14:20:56 [TRACE] dag/walk: visiting "data.phpipam_addresses.address_search"
+2020/06/17 14:20:56 [TRACE] vertex "data.phpipam_addresses.address_search": starting visit (*terraform.NodeRefreshableDataResourceInstance)
+2020/06/17 14:20:56 [TRACE] vertex "data.phpipam_addresses.address_search": evaluating
+2020/06/17 14:20:56 [TRACE] [walkRefresh] Entering eval tree: data.phpipam_addresses.address_search
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalWriteState
+2020/06/17 14:20:56 [TRACE] EvalWriteState: removing state object for data.phpipam_addresses.address_search
+2020/06/17 14:20:56 [TRACE] <root>: eval: *terraform.EvalReadData
+2020/06/17 14:20:56 [TRACE] EvalReadData: working on data.phpipam_addresses.address_search
+2020/06/17 14:20:56 [TRACE] Re-validating config for data.phpipam_addresses.address_search
+2020/06/17 14:20:56 [TRACE] GRPCProvider: ValidateDataSourceConfig
+2020/06/17 14:20:56 [TRACE] EvalReadData: data.phpipam_addresses.address_search configuration is complete, so reading from provider
+2020/06/17 14:20:56 [TRACE] GRPCProvider: ReadDataSource
+2020-06-17T14:20:56.371+0200 [DEBUG] plugin.terraform-provider-phpipam: 2020/06/17 14:20:56 Request Body Debug ................... {}
+2020-06-17T14:20:56.371+0200 [DEBUG] plugin.terraform-provider-phpipam: 2020/06/17 14:20:56 Request URL Debug ...................Method: GET, UR: https://ipam.domain.se/api/infraapi/subnets/66/addresses/
+2020-06-17T14:20:56.405+0200 [DEBUG] plugin.terraform-provider-phpipam: 2020/06/17 14:20:56 Response Body Debug ................... {"code":200,"success":true,"data":[{"id":"2199","subnetId":"66","ip":"10.50.5.1","is_gateway":null,"description":null,"hostname":null,"mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":"2018-03-01 13:10:45","excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":"2018-03-01 13:10:57","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2200","subnetId":"66","ip":"10.50.5.4","is_gateway":null,"description":null,"hostname":"llcxha01.domain.se","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":"2018-03-01 13:10:45","excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":"2018-03-01 13:10:57","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2201","subnetId":"66","ip":"10.50.5.5","is_gateway":null,"description":null,"hostname":"llcxha01.domain.se","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":"2018-03-01 13:10:45","excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":"2018-03-01 13:10:57","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2202","subnetId":"66","ip":"10.50.5.6","is_gateway":null,"description":null,"hostname":"llcxmsg01.domain.se","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":"2018-03-01 13:10:45","excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":"2018-03-01 13:10:57","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2203","subnetId":"66","ip":"10.50.5.7","is_gateway":null,"description":null,"hostname":"llcxmsg02.domain.se","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":"2018-03-01 13:10:45","excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":"2018-03-01 13:10:57","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2642","subnetId":"66","ip":"10.50.5.10","is_gateway":null,"description":"-- autodiscovered --","hostname":"df7test02.domain.se","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":"This host was autodiscovered on 2018-03-01 13:11:31","lastSeen":"2018-03-01 13:11:31","excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"4108","subnetId":"66","ip":"10.50.5.11","is_gateway":null,"description":" ansible created","hostname":"dimalek03.domain.se","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":null,"excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2204","subnetId":"66","ip":"10.50.5.12","is_gateway":null,"description":null,"hostname":"checkmk.domain.se","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":"2018-03-01 13:10:45","excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":"2018-03-01 13:10:57","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2643","subnetId":"66","ip":"10.50.5.14","is_gateway":null,"description":"-- autodiscovered --","hostname":"df7tst01.domain.se","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":"This host was autodiscovered on 2018-03-01 13:11:31","lastSeen":"2018-03-01 13:11:31","excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2644","subnetId":"66","ip":"10.50.5.15","is_gateway":null,"description":"-- autodiscovered --","hostname":"llsasca01.domain.se","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":"This host was autodiscovered on 2018-03-01 13:11:31","lastSeen":"2018-03-01 13:11:31","excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":"2018-03-12 14:40:03","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3044","subnetId":"66","ip":"10.50.5.16","is_gateway":null,"description":null,"hostname":"llprog02.domain.se","mac":null,"owner":null,"tag":"2","deviceId":"0","location":"0","port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3982","subnetId":"66","ip":"10.50.5.18","is_gateway":null,"description":" ansible created","hostname":"dimalek02.domain.se","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":null,"excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"4031","subnetId":"66","ip":"10.50.5.19","is_gateway":null,"description":" ansible created","hostname":"lltest03.domain.se","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":null,"excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3520","subnetId":"66","ip":"10.50.5.20","is_gateway":null,"description":null,"hostname":"llqualtest01.domain.se","mac":null,"owner":null,"tag":"2","deviceId":"0","location":"0","port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2733","subnetId":"66","ip":"10.50.5.42","is_gateway":null,"description":"Labb för Unix","hostname":"iluxlab01.domain.se","mac":null,"owner":null,"tag":"2","deviceId":"0","location":"0","port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2205","subnetId":"66","ip":"10.50.5.57","is_gateway":null,"description":null,"hostname":"llsas01.domain.se","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":"2017-11-19 18:51:56","excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2206","subnetId":"66","ip":"10.50.5.59","is_gateway":null,"description":null,"hostname":"llcxmsg04.domain.se","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":"2018-03-01 13:10:45","excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":"2018-03-01 13:10:57","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2207","subnetId":"66","ip":"10.50.5.60","is_gateway":null,"description":null,"hostname":"llcxmsg05.domain.se","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":"2018-03-01 13:10:45","excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":"2018-03-01 13:10:57","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2208","subnetId":"66","ip":"10.50.5.61","is_gateway":null,"description":"","hostname":"llcxha02.domain.se","mac":"","owner":"","tag":"2","deviceId":"0","location":"0","port":null,"note":"","lastSeen":"2017-11-19 18:51:56","excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":"2017-11-19 19:35:40","custom_CNAME":null,"custom_VRRP_ID":"45","customer_id":null},{"id":"2209","subnetId":"66","ip":"10.50.5.62","is_gateway":null,"description":null,"hostname":"llcxha02.domain.se","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":"2017-11-19 18:51:56","excludePing":null,"PTRignore":null,"PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2654","subnetId":"66","ip":"10.50.5.65","is_gateway":null,"description":null,"hostname":"llddok01.domain.se","mac":null,"owner":null,"tag":"2","deviceId":"0","location":"0","port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2655","subnetId":"66","ip":"10.50.5.66","is_gateway":null,"description":"","hostname":"llddok02.domain.se","mac":"","owner":"","tag":"2","deviceId":"0","location":"0","port":null,"note":"","lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":"2018-03-12 14:46:41","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2656","subnetId":"66","ip":"10.50.5.67","is_gateway":null,"description":null,"hostname":"llodwek01.domain.se","mac":null,"owner":null,"tag":"2","deviceId":"0","location":"0","port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2657","subnetId":"66","ip":"10.50.5.68","is_gateway":null,"description":null,"hostname":"llodwek02.domain.se","mac":null,"owner":null,"tag":"2","deviceId":"0","location":"0","port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2335","subnetId":"66","ip":"10.50.5.70","is_gateway":null,"description":null,"hostname":"llprog01.domain.se","mac":null,"owner":null,"tag":"2","deviceId":"0","location":"0","port":null,"note":null,"lastSeen":"2018-03-01 13:10:45","excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":"2018-03-01 13:10:57","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2742","subnetId":"66","ip":"10.50.5.71","is_gateway":null,"description":"","hostname":"lldocker01.domain.se","mac":"","owner":"","tag":"2","deviceId":"0","location":"0","port":null,"note":"","lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":"2018-06-12 10:38:01","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2938","subnetId":"66","ip":"10.50.5.75","is_gateway":null,"description":null,"hostname":"clearos_vm","mac":null,"owner":null,"tag":"2","deviceId":"0","location":"0","port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2723","subnetId":"66","ip":"10.50.5.100","is_gateway":null,"description":"NAC pilot ","hostname":"T18uac.domain.se","mac":"","owner":"","tag":"2","deviceId":"0","location":"0","port":null,"note":"","lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":"2018-05-25 09:24:42","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2724","subnetId":"66","ip":"10.50.5.101","is_gateway":null,"description":"NAC pilot kluster1 Svalan","hostname":"T18uac01.domain.se","mac":"","owner":"","tag":"2","deviceId":"0","location":"0","port":null,"note":"","lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":"2018-05-25 09:25:12","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2725","subnetId":"66","ip":"10.50.5.102","is_gateway":null,"description":"NAC pilot kluster2 Globen","hostname":"T18uac02.domain.se","mac":"","owner":"","tag":"2","deviceId":"0","location":"0","port":null,"note":"","lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":"2018-05-25 09:25:27","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3019","subnetId":"66","ip":"10.50.5.105","is_gateway":null,"description":null,"hostname":"llcx01.domain.se","mac":null,"owner":null,"tag":"2","deviceId":"0","location":"0","port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3020","subnetId":"66","ip":"10.50.5.106","is_gateway":null,"description":null,"hostname":"llcx02.domain.se","mac":null,"owner":null,"tag":"2","deviceId":"0","location":"0","port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3872","subnetId":"66","ip":"10.50.5.131","is_gateway":null,"description":null,"hostname":"dimalek1.domain.se","mac":null,"owner":null,"tag":"2","deviceId":"0","location":"0","port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3881","subnetId":"66","ip":"10.50.5.133","is_gateway":null,"description":"","hostname":"dsgtest1","mac":"","owner":"","tag":"2","deviceId":"0","location":"0","port":null,"note":"","lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":"2020-04-20 16:06:00","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"2895","subnetId":"66","ip":"10.50.5.145","is_gateway":null,"description":null,"hostname":"llod01","mac":null,"owner":null,"tag":"2","deviceId":"0","location":"0","port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3236","subnetId":"66","ip":"10.50.5.149","is_gateway":null,"description":null,"hostname":"iltest01.domain.se","mac":null,"owner":null,"tag":"2","deviceId":"0","location":"0","port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3994","subnetId":"66","ip":"10.50.5.155","is_gateway":null,"description":null,"hostname":"lldesktopdocker01","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3415","subnetId":"66","ip":"10.50.5.160","is_gateway":null,"description":null,"hostname":"llkundresa01","mac":null,"owner":null,"tag":"2","deviceId":"0","location":"0","port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3416","subnetId":"66","ip":"10.50.5.161","is_gateway":null,"description":"","hostname":"llkundresa02","mac":"","owner":"","tag":"2","deviceId":"0","location":"0","port":null,"note":"","lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":"2019-10-29 10:33:42","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3417","subnetId":"66","ip":"10.50.5.162","is_gateway":null,"description":"","hostname":"llkundresa03","mac":"","owner":"","tag":"2","deviceId":"0","location":"0","port":null,"note":"","lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":"2019-10-29 10:33:52","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3418","subnetId":"66","ip":"10.50.5.163","is_gateway":null,"description":"","hostname":"llkundresa04","mac":"","owner":"","tag":"2","deviceId":"0","location":"0","port":null,"note":"","lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":"2019-10-29 10:34:03","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3419","subnetId":"66","ip":"10.50.5.164","is_gateway":null,"description":"","hostname":"llkundresa05","mac":"","owner":"","tag":"2","deviceId":"0","location":"0","port":null,"note":"","lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":"2019-10-29 10:34:13","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3420","subnetId":"66","ip":"10.50.5.165","is_gateway":null,"description":"","hostname":"llkundresa06","mac":"","owner":"","tag":"2","deviceId":"0","location":"0","port":null,"note":"","lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":"2019-10-29 10:36:06","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3421","subnetId":"66","ip":"10.50.5.166","is_gateway":null,"description":"","hostname":"llkundresa07","mac":"","owner":"","tag":"2","deviceId":"0","location":"0","port":null,"note":"","lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":"2019-10-29 10:36:15","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3422","subnetId":"66","ip":"10.50.5.167","is_gateway":null,"description":"","hostname":"llkundresa08.domain.se","mac":"","owner":"","tag":"2","deviceId":"0","location":"0","port":null,"note":"","lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":"2020-01-28 12:11:11","custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"3993","subnetId":"66","ip":"10.50.5.210","is_gateway":null,"description":null,"hostname":"terraform","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null},{"id":"4097","subnetId":"66","ip":"10.50.5.217","is_gateway":null,"description":null,"hostname":"rancheros","mac":null,"owner":null,"tag":"2","deviceId":null,"location":null,"port":null,"note":null,"lastSeen":null,"excludePing":"0","PTRignore":"0","PTR":"0","firewallAddressObject":null,"editDate":null,"custom_CNAME":null,"custom_VRRP_ID":null,"customer_id":null}],"time":0.005}
+2020-06-17T14:20:56.406+0200 [DEBUG] plugin.terraform-provider-phpipam: 2020/06/17 14:20:56 Request Body Debug ................... {}
+2020-06-17T14:20:56.406+0200 [DEBUG] plugin.terraform-provider-phpipam: 2020/06/17 14:20:56 Request URL Debug ...................Method: GET, UR: https://ipam.domain.se/api/infraapi/addresses/custom_fields/
+2020-06-17T14:20:56.438+0200 [DEBUG] plugin.terraform-provider-phpipam: 2020/06/17 14:20:56 Response Body Debug ................... {"code":200,"success":true,"data":{"custom_CNAME":{"name":"custom_CNAME","type":"varchar(256)","Comment":"CNAME","Null":"YES","Default":null},"custom_VRRP_ID":{"name":"custom_VRRP_ID","type":"int(8)","Comment":"VRRP ID","Null":"YES","Default":null}},"time":0.003}
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: panic: runtime error: invalid memory address or nil pointer dereference
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: [signal SIGSEGV: segmentation violation code=0x1 addr=0x18 pc=0xd499c4]
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: 
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: goroutine 71 [running]:
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: github.com/pavel-z1/phpipam-sdk-go/phpipam/client.(*Client).GetCustomFields(0xc000208230, 0x897, 0xfa7218, 0x9, 0xc000200360, 0x1, 0x0)
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: 	/home/rado/go/pkg/mod/github.com/pavel-z1/phpipam-sdk-go@v0.0.0-20200516074937-3a7bd299a171/phpipam/client/client.go:103 +0x64
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: github.com/pavel-z1/phpipam-sdk-go/controllers/addresses.(*Controller).GetAddressCustomFields(...)
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: 	/home/rado/go/pkg/mod/github.com/pavel-z1/phpipam-sdk-go@v0.0.0-20200516074937-3a7bd299a171/controllers/addresses/addresses.go:125
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: github.com/lord-kyron/terraform-provider-phpipam/plugin/providers/phpipam.addressSearchInSubnet(0xc0002b0070, 0xdcaf40, 0xc00022b020, 0x40dce6, 0xc000098750, 0x30, 0x30, 0xf60d20)
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: 	/home/rado/Projects/terraform-provider-phpipam/plugin/providers/phpipam/address_structure.go:243 +0x572
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: github.com/lord-kyron/terraform-provider-phpipam/plugin/providers/phpipam.dataSourcePHPIPAMAddressesRead(0xc0002b0070, 0xdcaf40, 0xc00022b020, 0xc0002b0070, 0x0)
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: 	/home/rado/Projects/terraform-provider-phpipam/plugin/providers/phpipam/data_source_phpipam_addresses.go:36 +0x5d
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: github.com/hashicorp/terraform-plugin-sdk/helper/schema.(*Resource).ReadDataApply(0xc0004193b0, 0xc000232480, 0xdcaf40, 0xc00022b020, 0xc00041bf70, 0x1, 0x0)
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: 	/home/rado/go/pkg/mod/github.com/hashicorp/terraform-plugin-sdk@v1.12.0/helper/schema/resource.go:403 +0x88
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: github.com/hashicorp/terraform-plugin-sdk/helper/schema.(*Provider).ReadDataApply(0xc000156980, 0xc0005dbad0, 0xc000232480, 0xc000232480, 0x0, 0x0)
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: 	/home/rado/go/pkg/mod/github.com/hashicorp/terraform-plugin-sdk@v1.12.0/helper/schema/provider.go:451 +0x8f
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: github.com/hashicorp/terraform-plugin-sdk/internal/helper/plugin.(*GRPCProviderServer).ReadDataSource(0xc000010c50, 0x11f3f20, 0xc000170a80, 0xc0002ca100, 0xc000010c50, 0xc000170a80, 0xc000727b78)
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: 	/home/rado/go/pkg/mod/github.com/hashicorp/terraform-plugin-sdk@v1.12.0/internal/helper/plugin/grpc_provider.go:1036 +0x45d
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: github.com/hashicorp/terraform-plugin-sdk/internal/tfplugin5._Provider_ReadDataSource_Handler(0xf68760, 0xc000010c50, 0x11f3f20, 0xc000170a80, 0xc0006de060, 0x0, 0x11f3f20, 0xc000170a80, 0xc000720090, 0x82)
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: 	/home/rado/go/pkg/mod/github.com/hashicorp/terraform-plugin-sdk@v1.12.0/internal/tfplugin5/tfplugin5.pb.go:3341 +0x217
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: google.golang.org/grpc.(*Server).processUnaryRPC(0xc00059a180, 0x11fdd60, 0xc00059ac00, 0xc000210100, 0xc00007fc20, 0x18d70b0, 0x0, 0x0, 0x0)
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: 	/home/rado/go/pkg/mod/google.golang.org/grpc@v1.27.1/server.go:1024 +0x501
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: google.golang.org/grpc.(*Server).handleStream(0xc00059a180, 0x11fdd60, 0xc00059ac00, 0xc000210100, 0x0)
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: 	/home/rado/go/pkg/mod/google.golang.org/grpc@v1.27.1/server.go:1313 +0xd3d
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: google.golang.org/grpc.(*Server).serveStreams.func1.1(0xc00041c0c0, 0xc00059a180, 0x11fdd60, 0xc00059ac00, 0xc000210100)
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: 	/home/rado/go/pkg/mod/google.golang.org/grpc@v1.27.1/server.go:722 +0xa1
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: created by google.golang.org/grpc.(*Server).serveStreams.func1
+2020-06-17T14:20:56.440+0200 [DEBUG] plugin.terraform-provider-phpipam: 	/home/rado/go/pkg/mod/google.golang.org/grpc@v1.27.1/server.go:720 +0xa1
+2020/06/17 14:20:56 [ERROR] <root>: eval: *terraform.EvalReadData, err: rpc error: code = Unavailable desc = transport is closing
+2020/06/17 14:20:56 [ERROR] <root>: eval: *terraform.EvalSequence, err: rpc error: code = Unavailable desc = transport is closing
+2020/06/17 14:20:56 [TRACE] [walkRefresh] Exiting eval tree: data.phpipam_addresses.address_search
+2020/06/17 14:20:56 [TRACE] vertex "data.phpipam_addresses.address_search": visit complete
+2020/06/17 14:20:56 [TRACE] vertex "data.phpipam_addresses.address_search": dynamic subgraph encountered errors
+2020/06/17 14:20:56 [TRACE] vertex "data.phpipam_addresses.address_search": visit complete
+2020/06/17 14:20:56 [TRACE] dag/walk: upstream of "provider.phpipam (close)" errored, so skipping
+2020/06/17 14:20:56 [TRACE] dag/walk: upstream of "output.search_result" errored, so skipping
+2020-06-17T14:20:56.442+0200 [DEBUG] plugin: plugin process exited: path=/home/dish01/.terraform.d/plugins/linux_amd64/terraform-provider-phpipam pid=436739 error="exit status 2"
+2020/06/17 14:20:56 [TRACE] dag/walk: upstream of "root" errored, so skipping
+2020/06/17 14:20:56 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2020/06/17 14:20:56 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
+2020-06-17T14:20:56.444+0200 [DEBUG] plugin: plugin exited
